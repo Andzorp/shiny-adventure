@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dal Fry</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <h1><a href="index.html">Recipe Website</a></h1>
+          <button id="menu-toggle">☰</button>
+          <div class="dropdown">
+            <button class="dropbtn">Filter Recipes</button>
+            <div class="dropdown-content">
+              <a href="#" data-filter="all">All</a>
+              <a href="#" data-filter="appetizer">Appetizers</a>
+              <a href="#" data-filter="salad">Salads</a>
+              <a href="#" data-filter="chicken">Chicken</a>
+              <a href="#" data-filter="dinner">Dinners</a>
+              <a href="#" data-filter="dessert">Desserts</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <nav id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shopping-list.html">Shopping List</a></li>
+    </ul>
+  </nav>
+
+  <main class="recipe-detail">
+    <section class="recipe-info">
+      <div class="recipe-image-container">
+        <img src="images/dal-fry.jpg" alt="Dal Fry" class="recipe-image">
+      </div>
+      <h1>Dal Fry
+        <div class="back-to-home-button-header">
+            <a href="index.html" class="button back-to-home-button">Back to Home</a>
+          </div>
+      </h1>
+      <h2>Ingredients</h2>
+      <ul id="ingredients-list">
+        <li><input type="checkbox" id="ingredient1" data-item="1 cup toor dal (pigeon peas)"><label for="ingredient1">1 cup toor dal (pigeon peas)</label></li>
+        <li><input type="checkbox" id="ingredient2" data-item="1 onion, finely chopped"><label for="ingredient2">1 onion, finely chopped</label></li>
+        <li><input type="checkbox" id="ingredient3" data-item="2 tomatoes, finely chopped"><label for="ingredient3">2 tomatoes, finely chopped</label></li>
+        <li><input type="checkbox" id="ingredient4" data-item="1 tsp cumin seeds"><label for="ingredient4">1 tsp cumin seeds</label></li>
+        <li><input type="checkbox" id="ingredient5" data-item="2 cloves garlic, minced"><label for="ingredient5">2 cloves garlic, minced</label></li>
+        <li><input type="checkbox" id="ingredient6" data-item="1 inch ginger, grated"><label for="ingredient6">1 inch ginger, grated</label></li>
+        <li><input type="checkbox" id="ingredient7" data-item="2 green chilies, chopped"><label for="ingredient7">2 green chilies, chopped</label></li>
+        <li><input type="checkbox" id="ingredient8" data-item="1/2 tsp turmeric powder"><label for="ingredient8">1/2 tsp turmeric powder</label></li>
+        <li><input type="checkbox" id="ingredient9" data-item="1 tsp garam masala"><label for="ingredient9">1 tsp garam masala</label></li>
+        <li><input type="checkbox" id="ingredient10" data-item="Salt to taste"><label for="ingredient10">Salt to taste</label></li>
+        <li><input type="checkbox" id="ingredient11" data-item="2 tbsp ghee or oil"><label for="ingredient11">2 tbsp ghee or oil</label></li>
+        <li><input type="checkbox" id="ingredient12" data-item="Fresh coriander leaves for garnish"><label for="ingredient12">Fresh coriander leaves for garnish</label></li>
+      </ul>
+
+      <button id="view-shopping-list">Add to Shopping List</button>
+      <button href="shopping-list.html" id="go-to-master-list">Go to Master Shopping List</button>
+
+      <div id="shopping-list-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Shopping List</h2>
+          <ul id="shopping-list"></ul>
+        </div>
+      </div>
+
+      <h2>Instructions</h2>
+      <ol>
+        <li>Rinse the toor dal thoroughly and pressure cook until soft.</li>
+        <li>Heat ghee or oil in a pan and add cumin seeds. Let them splutter.</li>
+        <li>Add chopped onions, garlic, ginger, and green chilies. Sauté until the onions turn golden brown.</li>
+        <li>Add chopped tomatoes, turmeric powder, and garam masala. Cook until the tomatoes are soft and the oil starts to separate.</li>
+        <li>Add the cooked dal and stir well. Adjust salt to taste.</li>
+        <li>Let it simmer for a few minutes to allow the flavors to meld together.</li>
+        <li>Garnish with fresh coriander leaves and serve hot with rice or chapati.</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="shopping-list.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Recipe Website</p>
+  </footer>
+</body>
+</html>

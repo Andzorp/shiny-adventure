@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Grilled Corn Salad</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <h1><a href="index.html">Recipe Website</a></h1>
+          <button id="menu-toggle">☰</button>
+          <div class="dropdown">
+            <button class="dropbtn">Filter Recipes</button>
+            <div class="dropdown-content">
+              <a href="#" data-filter="all">All</a>
+              <a href="#" data-filter="appetizer">Appetizers</a>
+              <a href="#" data-filter="salad">Salads</a>
+              <a href="#" data-filter="chicken">Chicken</a>
+              <a href="#" data-filter="dinner">Dinners</a>
+              <a href="#" data-filter="dessert">Desserts</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <nav id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shopping-list.html">Shopping List</a></li>
+    </ul>
+  </nav>
+
+  <main class="recipe-detail">
+    <section class="recipe-info">
+      <div class="recipe-image-container">
+        <img src="images/corn-salad-10-2.jpg" alt="Summer Grilled Corn Salad" class="recipe-image">
+      </div>
+      <h1>Summer Grilled Corn Salad
+        <div class="back-to-home-button-header">
+            <a href="index.html" class="button back-to-home-button">Back to Home</a>
+          </div>
+      </h1>
+      <h2>Ingredients</h2>
+      <ul id="ingredients-list">
+        <li><input type="checkbox" id="ingredient1" data-item="4 ears of corn"><label for="ingredient1">4 ears of corn</label></li>
+        <li><input type="checkbox" id="ingredient2" data-item="1 red bell pepper, diced"><label for="ingredient2">1 red bell pepper, diced</label></li>
+        <li><input type="checkbox" id="ingredient3" data-item="1/4 cup red onion, finely chopped"><label for="ingredient3">1/4 cup red onion, finely chopped</label></li>
+        <li><input type="checkbox" id="ingredient4" data-item="1/4 cup cilantro, chopped"><label for="ingredient4">1/4 cup cilantro, chopped</label></li>
+        <li><input type="checkbox" id="ingredient5" data-item="2 tbsp lime juice"><label for="ingredient5">2 tbsp lime juice</label></li>
+        <li><input type="checkbox" id="ingredient6" data-item="2 tbsp olive oil"><label for="ingredient6">2 tbsp olive oil</label></li>
+        <li><input type="checkbox" id="ingredient7" data-item="Salt and pepper to taste"><label for="ingredient7">Salt and pepper to taste</label></li>
+      </ul>
+
+      <button id="view-shopping-list">Add to Shopping List</button>
+      <button href="shopping-list.html" id="go-to-master-list">Go to Master Shopping List</button>
+
+      <div id="shopping-list-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Shopping List</h2>
+          <ul id="shopping-list"></ul>
+        </div>
+      </div>
+
+      <h2>Instructions</h2>
+      <ol>
+        <li>Grill the corn until lightly charred. Allow it to cool, then cut the kernels off the cob.</li>
+        <li>In a large bowl, combine the corn kernels, red bell pepper, red onion, and cilantro.</li>
+        <li>In a small bowl, whisk together lime juice, olive oil, salt, and pepper. Pour over the salad and toss to coat.</li>
+        <li>Chill the salad for 30 minutes before serving.</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="shopping-list.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Recipe Website</p>
+  </footer>
+</body>
+</html>

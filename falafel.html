@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Falafel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <h1><a href="index.html">Recipe Website</a></h1>
+          <button id="menu-toggle">☰</button>
+          <div class="dropdown">
+            <button class="dropbtn">Filter Recipes</button>
+            <div class="dropdown-content">
+              <a href="#" data-filter="all">All</a>
+              <a href="#" data-filter="appetizer">Appetizers</a>
+              <a href="#" data-filter="salad">Salads</a>
+              <a href="#" data-filter="chicken">Chicken</a>
+              <a href="#" data-filter="dinner">Dinners</a>
+              <a href="#" data-filter="dessert">Desserts</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <nav id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shopping-list.html">Shopping List</a></li>
+    </ul>
+  </nav>
+
+  <main class="recipe-detail">
+    <section class="recipe-info">
+      <div class="recipe-image-container">
+        <img src="images/falafel-recipe-10.jpg" alt="Falafel" class="recipe-image">
+      </div>
+      <h1>Falafel
+        <div class="back-to-home-button-header">
+            <a href="index.html" class="button back-to-home-button">Back to Home</a>
+          </div>
+      </h1>
+      <h2>Ingredients</h2>
+      <ul id="ingredients-list">
+        <li><input type="checkbox" id="ingredient1" data-item="1 cup dried chickpeas"><label for="ingredient1">1 cup dried chickpeas</label></li>
+        <li><input type="checkbox" id="ingredient2" data-item="1/2 onion, roughly chopped"><label for="ingredient2">1/2 onion, roughly chopped</label></li>
+        <li><input type="checkbox" id="ingredient3" data-item="1/4 cup parsley, chopped"><label for="ingredient3">1/4 cup parsley, chopped</label></li>
+        <li><input type="checkbox" id="ingredient4" data-item="1/4 cup cilantro, chopped"><label for="ingredient4">1/4 cup cilantro, chopped</label></li>
+        <li><input type="checkbox" id="ingredient5" data-item="4 cloves garlic"><label for="ingredient5">4 cloves garlic</label></li>
+        <li><input type="checkbox" id="ingredient6" data-item="1 tsp cumin"><label for="ingredient6">1 tsp cumin</label></li>
+        <li><input type="checkbox" id="ingredient7" data-item="1 tsp coriander"><label for="ingredient7">1 tsp coriander</label></li>
+        <li><input type="checkbox" id="ingredient8" data-item="1/2 tsp baking powder"><label for="ingredient8">1/2 tsp baking powder</label></li>
+        <li><input type="checkbox" id="ingredient9" data-item="Salt to taste"><label for="ingredient9">Salt to taste</label></li>
+        <li><input type="checkbox" id="ingredient10" data-item="Oil for frying"><label for="ingredient10">Oil for frying</label></li>
+      </ul>
+
+      <button id="view-shopping-list">Add to Shopping List</button>
+      <button href="shopping-list.html" id="go-to-master-list">Go to Master Shopping List</button>
+
+      <div id="shopping-list-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Shopping List</h2>
+          <ul id="shopping-list"></ul>
+        </div>
+      </div>
+
+      <h2>Instructions</h2>
+      <ol>
+        <li>Soak chickpeas in water overnight. Drain well.</li>
+        <li>In a food processor, combine chickpeas, onion, parsley, cilantro, garlic, cumin, coriander, baking powder, and salt. Process until mixture is coarse but holds together.</li>
+        <li>Shape mixture into small balls or patties.</li>
+        <li>Heat oil in a pan and fry falafel until golden brown and crispy.</li>
+        <li>Serve falafel with pita bread, tahini sauce, or hummus.</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="shopping-list.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Recipe Website</p>
+  </footer>
+</body>
+</html>

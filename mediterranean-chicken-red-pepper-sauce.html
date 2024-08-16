@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One-Pan Mediterranean Chicken with Roasted Red Pepper Sauce</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <h1><a href="index.html">Recipe Website</a></h1>
+          <button id="menu-toggle">☰</button>
+          <div class="dropdown">
+            <button class="dropbtn">Filter Recipes</button>
+            <div class="dropdown-content">
+              <a href="#" data-filter="all">All</a>
+              <a href="#" data-filter="appetizer">Appetizers</a>
+              <a href="#" data-filter="salad">Salads</a>
+              <a href="#" data-filter="chicken">Chicken</a>
+              <a href="#" data-filter="dinner">Dinners</a>
+              <a href="#" data-filter="dessert">Desserts</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <nav id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shopping-list.html">Shopping List</a></li>
+    </ul>
+  </nav>
+
+  <main class="recipe-detail">
+    <section class="recipe-info">
+      <div class="recipe-image-container">
+        <img src="images/mediterranean-chicken-roasted-red-pepper-sauce-7sm-8.jpg" alt="Mediterranean Chicken" class="recipe-image">
+      </div>
+      <h1>One-Pan Mediterranean Chicken with Roasted Red Pepper Sauce
+        <div class="back-to-home-button-header">
+            <a href="index.html" class="button back-to-home-button">Back to Home</a>
+          </div>
+      </h1>
+      <h2>Ingredients</h2>
+      <ul id="ingredients-list">
+        <li><input type="checkbox" id="ingredient1" data-item="4 boneless, skinless chicken thighs"><label for="ingredient1">4 boneless, skinless chicken thighs</label></li>
+        <li><input type="checkbox" id="ingredient2" data-item="1/4 cup olive oil"><label for="ingredient2">1/4 cup olive oil</label></li>
+        <li><input type="checkbox" id="ingredient3" data-item="1 red bell pepper, chopped"><label for="ingredient3">1 red bell pepper, chopped</label></li>
+        <li><input type="checkbox" id="ingredient4" data-item="1/4 cup sun-dried tomatoes, chopped"><label for="ingredient4">1/4 cup sun-dried tomatoes, chopped</label></li>
+        <li><input type="checkbox" id="ingredient5" data-item="1 cup chicken broth"><label for="ingredient5">1 cup chicken broth</label></li>
+        <li><input type="checkbox" id="ingredient6" data-item="1/4 cup balsamic vinegar"><label for="ingredient6">1/4 cup balsamic vinegar</label></li>
+        <li><input type="checkbox" id="ingredient7" data-item="1 tsp dried oregano"><label for="ingredient7">1 tsp dried oregano</label></li>
+        <li><input type="checkbox" id="ingredient8" data-item="Salt and pepper to taste"><label for="ingredient8">Salt and pepper to taste</label></li>
+        <li><input type="checkbox" id="ingredient9" data-item="Fresh parsley for garnish"><label for="ingredient9">Fresh parsley for garnish</label></li>
+      </ul>
+
+      <button id="view-shopping-list">Add to Shopping List</button>
+      <button href="shopping-list.html" id="go-to-master-list">Go to Master Shopping List</button>
+
+      <div id="shopping-list-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Shopping List</h2>
+          <ul id="shopping-list"></ul>
+        </div>
+      </div>
+
+      <h2>Instructions</h2>
+      <ol>
+        <li>Preheat the oven to 400°F (200°C).</li>
+        <li>In a large oven-safe skillet, heat olive oil over medium-high heat. Season chicken thighs with salt and pepper, then sear them in the skillet until golden brown on both sides, about 5 minutes per side. Remove from skillet and set aside.</li>
+        <li>Add chopped red bell pepper and sun-dried tomatoes to the skillet. Sauté for a few minutes until softened.</li>
+        <li>Stir in chicken broth, balsamic vinegar, and oregano. Bring to a simmer.</li>
+        <li>Return the chicken thighs to the skillet, spooning some of the sauce over the top.</li>
+        <li>Transfer the skillet to the oven and bake for 20-25 minutes, or until the chicken is cooked through and the sauce has thickened.</li>
+        <li>Garnish with fresh parsley before serving.</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="shopping-list.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Recipe Website</p>
+  </footer>
+</body>
+</html>

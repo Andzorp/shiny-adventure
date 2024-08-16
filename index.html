@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <h1><a href="index.html">Recipe Website</a></h1>
+          <button id="menu-toggle">☰</button>
+          <div class="dropdown">
+            <button class="dropbtn">Filter Recipes</button>
+            <div class="dropdown-content">
+              <a href="#" data-filter="all">All</a>
+              <a href="#" data-filter="appetizer">Appetizers</a>
+              <a href="#" data-filter="salad">Salads</a>
+              <a href="#" data-filter="chicken">Chicken</a>
+              <a href="#" data-filter="dinner">Dinners</a>
+              <a href="#" data-filter="dessert">Desserts</a>
+            </div>
+          </div>
+          
+        </div>
+      </header>
+
+      <div class="filter-header">
+        <h2 id="filter-header">All Recipes</h2>
+      </div>
+    
+      <div class="container"> <!-- Add a container if needed -->
+        <nav id="sidebar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shopping-list.html">Shopping List</a></li>
+            <!-- Additional links here -->
+          </ul>
+        </nav>
+      </div>
+
+  <div class="recipe-card-container">
+    <!-- Recipe Card for Mediterranean Three Bean Salad -->
+    <div class="recipe-card" data-category="salad">
+        <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+            <img src="images/Three-Bean-Salad-Recipe-The-Mediterranean-Dish-1.jpg" alt="Mediterranean Three Bean Salad">
+            <h2>Mediterranean Three Bean Salad</h2>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+            <h3>Nutrition Facts</h3>
+            <p>Serving Size: 1 cup</p>
+            <ul>
+            <li>Calories: 220</li>
+            <li>Protein: 10g</li>
+            <li>Fat: 12g</li>
+            <li>Carbohydrates: 23g</li>
+            <li>Fiber: 7g</li>
+            <li>Sugar: 4g</li>
+            </ul>
+            <a href="mediterranean-three-bean.html" class="button">View Recipe</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Recipe Card for Summer Grilled Corn Salad -->
+    <div class="recipe-card" data-category="salad">
+        <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+            <img src="images/corn-salad-10-2.jpg" alt="Summer Grilled Corn Salad">
+            <h2>Summer Grilled Corn Salad</h2>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+            <h3>Nutrition Facts</h3>
+            <p>Serving Size: 1 cup</p>
+            <ul>
+            <li>Calories: 180</li>
+            <li>Protein: 4g</li>
+            <li>Fat: 8g</li>
+            <li>Carbohydrates: 25g</li>
+            <li>Fiber: 4g</li>
+            <li>Sugar: 5g</li>
+            </ul>
+            <a href="summer-grilled-corn.html" class="button">View Recipe</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Recipe Card for Palak Spinach Chicken -->
+    <div class="recipe-card" data-category="chicken">
+        <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+            <img src="images/palak-chicken.jpg.png" alt="Palak Spinach Chicken">
+            <h2>Palak Spinach Chicken</h2>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+            <h3>Nutrition Facts</h3>
+            <p>Serving Size: 1 serving</p>
+            <ul>
+            <li>Calories: 320</li>
+            <li>Protein: 30g</li>
+            <li>Fat: 15g</li>
+            <li>Carbohydrates: 10g</li>
+            <li>Fiber: 4g</li>
+            <li>Sugar: 3g</li>
+            </ul>
+            <a href="palak-chicken.html" class="button">View Recipe</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Recipe Card for How to Make Falafel -->
+    <div class="recipe-card" data-category="appetizer">
+        <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+            <img src="images/falafel-recipe-10.jpg" alt="How to Make Falafel">
+            <h2>How to Make Falafel</h2>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+            <h3>Nutrition Facts</h3>
+            <p>Serving Size: 4 pieces</p>
+            <ul>
+            <li>Calories: 350</li>
+            <li>Protein: 15g</li>
+            <li>Fat: 20g</li>
+            <li>Carbohydrates: 30g</li>
+            <li>Fiber: 6g</li>
+            <li>Sugar: 5g</li>
+            </ul>
+            <a href="falafel.html" class="button">View Recipe</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Recipe Card for One-Pot Lemon Herb Chicken & Rice -->
+    <div class="recipe-card" data-category="chicken">
+        <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+            <img src="images/lemon-herb-chicken.jpg" alt="One-Pot Lemon Herb Chicken & Rice">
+            <h2>One-Pot Lemon Herb Chicken & Rice</h2>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+            <h3>Nutrition Facts</h3>
+            <p>Serving Size: 1 cup</p>
+            <ul>
+            <li>Calories: 405</li>
+            <li>Protein: 27g</li>
+            <li>Fat: 12g</li>
+            <li>Carbohydrates: 45g</li>
+            <li>Fiber: 2g</li>
+            <li>Sugar: 2g</li>
+            </ul>
+            <a href="lemon-herb-chicken.html" class="button">View Recipe</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Recipe Card for Life-Changing Peanut Butter Noodles -->
+    <div class="recipe-card" data-category="dinner">
+        <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+            <img src="images/Life-changing-peanut-butter-noodles-6-680x1020.jpg" alt="Life-Changing Peanut Butter Noodles">
+            <h2>Life-Changing Peanut Butter Noodles</h2>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+            <h3>Nutrition Facts</h3>
+            <p>Serving Size: 1 bowl</p>
+            <ul>
+            <li>Calories: 400</li>
+            <li>Protein: 12g</li>
+            <li>Fat: 22g</li>
+            <li>Carbohydrates: 40g</li>
+            <li>Fiber: 5g</li>
+            <li>Sugar: 8g</li>
+            </ul>
+            <a href="peanut-butter-noodles.html" class="button">View Recipe</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Recipe Card for Dal Fry Recipe -->
+    <div class="recipe-card" data-category="dinner">
+        <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+            <img src="images/dal-fry.jpg" alt="Dal Fry Recipe">
+            <h2>Dal Fry Recipe</h2>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+            <h3>Nutrition Facts</h3>
+            <p>Serving Size: 1 cup</p>
+            <ul>
+            <li>Calories: 280</li>
+            <li>Protein: 15g</li>
+            <li>Fat: 10g</li>
+            <li>Carbohydrates: 30g</li>
+            <li>Fiber: 8g</li>
+            <li>Sugar: 5g</li>
+            </ul>
+            <a href="dal-fry.html" class="button">View Recipe</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Recipe Card for How to Make Amazing Hummus -->
+    <div class="recipe-card" data-category="appetizer">
+        <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+            <img src="images/hummus-on-brown-flatlay-closeup-scaled.jpg" alt="How to Make Amazing Hummus">
+            <h2>How to Make Amazing Hummus</h2>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+            <h3>Nutrition Facts</h3>
+            <p>Serving Size: 1/4 cup</p>
+            <ul>
+            <li>Calories: 180</li>
+            <li>Protein: 6g</li>
+            <li>Fat: 12g</li>
+            <li>Carbohydrates: 15g</li>
+            <li>Fiber: 4g</li>
+            <li>Sugar: 1g</li>
+            </ul>
+            <a href="hummus.html" class="button">View Recipe</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Recipe Card for One-Pan Mediterranean Chicken -->
+    <div class="recipe-card" data-category="chicken">
+        <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front">
+            <img src="images/mediterranean-chicken-roasted-red-pepper-sauce-7sm-8.jpg" alt="One-Pan Mediterranean Chicken">
+            <h2>One-Pan Mediterranean Chicken</h2>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+            <h3>Nutrition Facts</h3>
+            <p>Serving Size: 1 serving</p>
+            <ul>
+            <li>Calories: 350</li>
+            <li>Protein: 28g</li>
+            <li>Fat: 15g</li>
+            <li>Carbohydrates: 20g</li>
+            <li>Fiber: 5g</li>
+            <li>Sugar: 4g</li>
+            </ul>
+            <a href="mediterranean-chicken-red-pepper-sauce.html" class="button">View Recipe</a>
+        </div>
+        </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="dynamic-header.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palak (Spinach) Chicken</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <h1><a href="index.html">Recipe Website</a></h1>
+          <button id="menu-toggle">☰</button>
+          <div class="dropdown">
+            <button class="dropbtn">Filter Recipes</button>
+            <div class="dropdown-content">
+              <a href="#" data-filter="all">All</a>
+              <a href="#" data-filter="appetizer">Appetizers</a>
+              <a href="#" data-filter="salad">Salads</a>
+              <a href="#" data-filter="chicken">Chicken</a>
+              <a href="#" data-filter="dinner">Dinners</a>
+              <a href="#" data-filter="dessert">Desserts</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <nav id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shopping-list.html">Shopping List</a></li>
+    </ul>
+  </nav>
+
+  <main class="recipe-detail">
+    <section class="recipe-info">
+      <div class="recipe-image-container">
+        <img src="images/palak-chicken.jpg.png" alt="Palak (Spinach) Chicken" class="recipe-image">
+      </div>
+      <h1>Palak (Spinach) Chicken
+        <div class="back-to-home-button-header">
+            <a href="index.html" class="button back-to-home-button">Back to Home</a>
+          </div>
+      </h1>
+      <h2>Ingredients</h2>
+      <ul id="ingredients-list">
+        <li><input type="checkbox" id="ingredient1" data-item="500g chicken, cut into pieces"><label for="ingredient1">500g chicken, cut into pieces</label></li>
+        <li><input type="checkbox" id="ingredient2" data-item="4 cups spinach leaves, chopped"><label for="ingredient2">4 cups spinach leaves, chopped</label></li>
+        <li><input type="checkbox" id="ingredient3" data-item="1 onion, chopped"><label for="ingredient3">1 onion, chopped</label></li>
+        <li><input type="checkbox" id="ingredient4" data-item="2 tomatoes, chopped"><label for="ingredient4">2 tomatoes, chopped</label></li>
+        <li><input type="checkbox" id="ingredient5" data-item="1 tbsp ginger-garlic paste"><label for="ingredient5">1 tbsp ginger-garlic paste</label></li>
+        <li><input type="checkbox" id="ingredient6" data-item="1 tsp cumin powder"><label for="ingredient6">1 tsp cumin powder</label></li>
+        <li><input type="checkbox" id="ingredient7" data-item="1 tsp coriander powder"><label for="ingredient7">1 tsp coriander powder</label></li>
+        <li><input type="checkbox" id="ingredient8" data-item="1/2 tsp turmeric powder"><label for="ingredient8">1/2 tsp turmeric powder</label></li>
+        <li><input type="checkbox" id="ingredient9" data-item="Salt to taste"><label for="ingredient9">Salt to taste</label></li>
+        <li><input type="checkbox" id="ingredient10" data-item="2 tbsp oil"><label for="ingredient10">2 tbsp oil</label></li>
+      </ul>
+
+      <button id="view-shopping-list">Add to Shopping List</button>
+      <button href="shopping-list.html" id="go-to-master-list">Go to Master Shopping List</button>
+
+      <div id="shopping-list-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Shopping List</h2>
+          <ul id="shopping-list"></ul>
+        </div>
+      </div>
+
+      <h2>Instructions</h2>
+      <ol>
+        <li>Heat oil in a pan and sauté onions until golden. Add ginger-garlic paste and cook for 1 minute.</li>
+        <li>Add chopped tomatoes and cook until soft. Stir in cumin, coriander, turmeric, and salt.</li>
+        <li>Add chicken and cook until browned. Add chopped spinach and cook until the chicken is done.</li>
+        <li>Serve hot with rice or roti.</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="shopping-list.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Recipe Website</p>
+  </footer>
+</body>
+</html>

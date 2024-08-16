@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Make Amazing Hummus at Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <h1><a href="index.html">Recipe Website</a></h1>
+          <button id="menu-toggle">☰</button>
+          <div class="dropdown">
+            <button class="dropbtn">Filter Recipes</button>
+            <div class="dropdown-content">
+              <a href="#" data-filter="all">All</a>
+              <a href="#" data-filter="appetizer">Appetizers</a>
+              <a href="#" data-filter="salad">Salads</a>
+              <a href="#" data-filter="chicken">Chicken</a>
+              <a href="#" data-filter="dinner">Dinners</a>
+              <a href="#" data-filter="dessert">Desserts</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <nav id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shopping-list.html">Shopping List</a></li>
+    </ul>
+  </nav>
+
+  <main class="recipe-detail">
+    <section class="recipe-info">
+      <div class="recipe-image-container">
+        <img src="images/hummus-on-brown-flatlay-closeup-scaled.jpg" alt="Hummus" class="recipe-image">
+      </div>
+      <h1>How to Make Amazing Hummus at Home
+        <div class="back-to-home-button-header">
+            <a href="index.html" class="button back-to-home-button">Back to Home</a>
+          </div>
+      </h1>
+      <h2>Ingredients</h2>
+      <ul id="ingredients-list">
+        <li><input type="checkbox" id="ingredient1" data-item="1 can (15 oz) chickpeas, drained and rinsed"><label for="ingredient1">1 can (15 oz) chickpeas, drained and rinsed</label></li>
+        <li><input type="checkbox" id="ingredient2" data-item="1/4 cup fresh lemon juice (about 1 large lemon)"><label for="ingredient2">1/4 cup fresh lemon juice (about 1 large lemon)</label></li>
+        <li><input type="checkbox" id="ingredient3" data-item="1/4 cup tahini"><label for="ingredient3">1/4 cup tahini</label></li>
+        <li><input type="checkbox" id="ingredient4" data-item="1 small garlic clove, minced"><label for="ingredient4">1 small garlic clove, minced</label></li>
+        <li><input type="checkbox" id="ingredient5" data-item="2 tbsp extra-virgin olive oil"><label for="ingredient5">2 tbsp extra-virgin olive oil</label></li>
+        <li><input type="checkbox" id="ingredient6" data-item="1/2 tsp ground cumin"><label for="ingredient6">1/2 tsp ground cumin</label></li>
+        <li><input type="checkbox" id="ingredient7" data-item="Salt to taste"><label for="ingredient7">Salt to taste</label></li>
+        <li><input type="checkbox" id="ingredient8" data-item="2 to 3 tbsp water"><label for="ingredient8">2 to 3 tbsp water</label></li>
+        <li><input type="checkbox" id="ingredient9" data-item="Chopped parsley and additional olive oil for garnish"><label for="ingredient9">Chopped parsley and additional olive oil for garnish</label></li>
+      </ul>
+
+      <button id="view-shopping-list">Add to Shopping List</button>
+      <button href="shopping-list.html" id="go-to-master-list">Go to Master Shopping List</button>
+
+      <div id="shopping-list-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Shopping List</h2>
+          <ul id="shopping-list"></ul>
+        </div>
+      </div>
+
+      <h2>Instructions</h2>
+      <ol>
+        <li>In a food processor, combine chickpeas, lemon juice, and tahini. Process until smooth.</li>
+        <li>Scrape down the sides of the bowl and add garlic, olive oil, cumin, and salt. Process until well blended and smooth.</li>
+        <li>If the hummus is too thick, add water a tablespoon at a time until the desired consistency is reached.</li>
+        <li>Transfer to a serving bowl and drizzle with additional olive oil. Garnish with chopped parsley.</li>
+        <li>Serve with pita bread or vegetables.</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="shopping-list.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Recipe Website</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mediterranean Three-Bean Salad</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <h1><a href="index.html">Recipe Website</a></h1>
+          <button id="menu-toggle">☰</button>
+          <div class="dropdown">
+            <button class="dropbtn">Filter Recipes</button>
+            <div class="dropdown-content">
+              <a href="#" data-filter="all">All</a>
+              <a href="#" data-filter="appetizer">Appetizers</a>
+              <a href="#" data-filter="salad">Salads</a>
+              <a href="#" data-filter="chicken">Chicken</a>
+              <a href="#" data-filter="dinner">Dinners</a>
+              <a href="#" data-filter="dessert">Desserts</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <nav id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shopping-list.html">Shopping List</a></li>
+    </ul>
+  </nav>
+
+  <main class="recipe-detail">
+    <section class="recipe-info">
+        <div class="recipe-image-container">
+          <img src="images/Three-Bean-Salad-Recipe-The-Mediterranean-Dish-1.jpg" alt="Mediterranean Three-Bean Salad" class="recipe-image">
+        </div>
+        <h1>Mediterranean Three-Bean Salad
+            <div class="back-to-home-button-header">
+                <a href="index.html" class="button back-to-home-button">Back to Home</a>
+              </div>
+        </h1>
+        <h2>Ingredients</h2>
+        <ul id="ingredients-list">
+          <li><input type="checkbox" id="ingredient1" data-item="1 can (15 oz) cannellini beans"><label for="ingredient1">1 can (15 oz) cannellini beans</label></li>
+          <li><input type="checkbox" id="ingredient2" data-item="1 can (15 oz) chickpeas"><label for="ingredient2">1 can (15 oz) chickpeas</label></li>
+          <li><input type="checkbox" id="ingredient3" data-item="1 can (15 oz) red kidney beans"><label for="ingredient3">1 can (15 oz) red kidney beans</label></li>
+          <li><input type="checkbox" id="ingredient4" data-item="1/2 red onion, finely chopped"><label for="ingredient4">1/2 red onion, finely chopped</label></li>
+          <li><input type="checkbox" id="ingredient5" data-item="1 cucumber, diced"><label for="ingredient5">1 cucumber, diced</label></li>
+          <li><input type="checkbox" id="ingredient6" data-item="1/2 cup fresh parsley"><label for="ingredient6">1/2 cup fresh parsley</label></li>
+          <li><input type="checkbox" id="ingredient7" data-item="1/3 cup olive oil"><label for="ingredient7">1/3 cup olive oil</label></li>
+          <li><input type="checkbox" id="ingredient8" data-item="3 tbsp red wine vinegar"><label for="ingredient8">3 tbsp red wine vinegar</label></li>
+          <li><input type="checkbox" id="ingredient9" data-item="Salt and pepper to taste"><label for="ingredient9">Salt and pepper to taste</label></li>
+        </ul>
+
+        <button id="view-shopping-list">Add to Shopping List</button>
+        <button href="shopping-list.html" id="go-to-master-list">Go to Master Shopping List</button>
+
+        <!-- Modal Structure -->
+        <div id="shopping-list-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping List</h2>
+            <ul id="shopping-list">
+              <!-- Added items will be listed here -->
+            </ul>
+          </div>
+        </div>
+
+        <h2>Instructions</h2>
+        <ol>
+          <li>Rinse and drain the beans well. In a large bowl, combine the beans, red onion, cucumber, and parsley.</li>
+          <li>In a small bowl, whisk together the olive oil, vinegar, salt, and pepper.</li>
+          <li>Pour the dressing over the salad and toss to combine. Serve chilled or at room temperature.</li>
+        </ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="shopping-list.js"></script>
+
+  <footer>
+    <p>&copy; 2024 Recipe Website</p>
+  </footer>
+</body>
+</html>

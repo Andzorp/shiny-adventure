@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Shopping List</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1><a href="index.html">Recipe Website</a></h1>
+      <button id="menu-toggle">☰</button>
+      <div class="dropdown">
+        <button class="dropbtn">Filter Recipes</button>
+        <div class="dropdown-content">
+          <a href="#" data-filter="all">All</a>
+          <a href="#" data-filter="appetizer">Appetizers</a>
+          <a href="#" data-filter="salad">Salads</a>
+          <a href="#" data-filter="chicken">Chicken</a>
+          <a href="#" data-filter="dinner">Dinners</a>
+          <a href="#" data-filter="dessert">Desserts</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="back-to-home-button-header">
+    <a href="index.html" class="button back-to-home-button">Back to Home</a>
+  </div>
+    
+      <nav id="sidebar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shopping-list.html">Shopping List</a></li>
+        </ul>
+      </nav>
+
+  <main>
+    <section class="shopping-list-container">
+      <h2>Master Shopping List</h2>
+      <ul id="master-shopping-list">
+        <!-- Added items will be listed here -->
+      </ul>
+      <button id="clear-list-btn" class="button">Clear List</button>
+      
+      <!-- New section for adding items -->
+      <div class="add-item-container">
+        <input type="text" id="new-item" placeholder="Add new item">
+        <button id="add-item-btn" class="button">Add Item</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const masterShoppingList = document.getElementById('master-shopping-list');
+  const clearListBtn = document.getElementById('clear-list-btn');
+  const addItemBtn = document.getElementById('add-item-btn');
+  const newItemInput = document.getElementById('new-item');
+
+  // Load items from local storage and display them
+  const loadItems = () => {
+    const items = JSON.parse(localStorage.getItem('shoppingList')) || [];
+    masterShoppingList.innerHTML = ''; // Clear existing list
+    items.forEach(item => {
+      const listItem = document.createElement('li');
+      listItem.innerHTML = `
+        <span class="item-text">${item}</span>
+        <div class="button-container">
+          <button class="edit-item">Edit</button>
+          <button class="delete-item">Delete</button>
+        </div>
+      `;
+      masterShoppingList.appendChild(listItem);
+    });
+  };
+
+  loadItems();
+
+  // Add a new item to the list
+  addItemBtn.addEventListener('click', () => {
+    const newItem = newItemInput.value.trim();
+    if (newItem === '') {
+      alert('Please enter an item.');
+      return;
+    }
+
+    // Add item to local storage
+    const currentItems = JSON.parse(localStorage.getItem('shoppingList')) || [];
+    currentItems.push(newItem);
+    localStorage.setItem('shoppingList', JSON.stringify(currentItems));
+
+    // Add item to the list on the page
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `
+      <span class="item-text">${newItem}</span>
+      <div class="button-container">
+        <button class="edit-item">Edit</button>
+        <button class="delete-item">Delete</button>
+      </div>
+    `;
+    masterShoppingList.appendChild(listItem);
+
+    // Clear the input field
+    newItemInput.value = '';
+  });
+
+  // Edit or delete items
+  masterShoppingList.addEventListener('click', (event) => {
+    const target = event.target;
+    if (target.classList.contains('delete-item')) {
+      // Delete item
+      const itemText = target.parentElement.previousElementSibling.textContent.trim();
+      let items = JSON.parse(localStorage.getItem('shoppingList')) || [];
+      items = items.filter(item => item !== itemText);
+      localStorage.setItem('shoppingList', JSON.stringify(items));
+      loadItems();
+    } else if (target.classList.contains('edit-item')) {
+      // Edit item
+      const oldText = target.parentElement.previousElementSibling.textContent.trim();
+      const newText = prompt('Edit item:', oldText);
+      if (newText !== null && newText.trim() !== '') {
+        let items = JSON.parse(localStorage.getItem('shoppingList')) || [];
+        items = items.map(item => item === oldText ? newText.trim() : item);
+        localStorage.setItem('shoppingList', JSON.stringify(items));
+        loadItems();
+      }
+    }
+  });
+
+  // Clear all items from local storage and the list
+  clearListBtn.addEventListener('click', () => {
+    localStorage.removeItem('shoppingList');
+    masterShoppingList.innerHTML = '';
+  });
+});
+  </script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
